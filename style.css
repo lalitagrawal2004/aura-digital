@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+}
+ul .navbar-nav{
+    width: 50% !important;
+}
+.carousel-item img{
+    width: 100%;
+    
+}
+.navbar-nav .nav-link:hover {
+  color: red !important;
+}
+@keyframes buttonHover {
+    0% { background-color: #ffffff; }
+    50% { background-color: #ff0000; }
+    100% { background-color: #ffffff; }
+}
+
+a.nav_contact_btn.btn {
+    animation: buttonHover 1s infinite;
+}
+
+a.nav_contact_btn.btn:hover {
+    animation-play-state: paused;
+    background-color: #ff0000;
+}
+
+.down_area{
+    background-color: #000000 !important;
+}
+.our_ser{
+    color: red !important;
+}
+
+.work_icon img {
+    transition: box-shadow 0.5s; 
+    border-radius: 50%; 
+}
+
+.work_icon img:hover {
+    box-shadow: 0 0 20px #ff0000;
+}
+.carousel-item.second img {
+    width: 100%;
+    height: 90vh; 
+    object-fit: cover;
+}
+p.icon_text {
+    text-decoration: none !important;
+}
+.sem_header img {
+    height: 20vh; /* Keep using viewport height if it works for your layout */
+    width: 50%; /* This is the percentage of the container's width */
+}
+
+@media (max-width: 768px) {
+    .sem_header img {
+        width: 200px; /* Adjust width for smaller screens */
+    }
+}
+
+@media(max-width:991px){
+    
+    a.btn{
+        
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+span.navbar-toggler-icon{
+    
+    position: absolute;
+    right: 17px;
+    top: 23px;
+}
+
+button.navbar-toggler{
+    
+    border: none;
+    color: none;
+    
+}
+
+button.navbar-toggler:focus, span.navbar-toggler-icon:focus{
+    
+    box-shadow: none;
+    outline: none;
+    
+}
+
+
